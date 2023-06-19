@@ -12,6 +12,7 @@ $tamanio-titulos: 3.5em;
 $color-secundario: #aeaeae;
 $color-terciario: #3333e3;
 $sombra-baja: 2px 2px 20px #0002;
+$sombra-baja-clara: 2px 2px 20px #fffe;
 
 //Nav 
 header {
@@ -194,6 +195,187 @@ header {
         }
 }
 
+//main seleccion de productos 
+//!category-products
+.title-products {
+        h1 {
+            display: inline-block;
+            font-size: $tamanio-titulos;
+            margin-left: 15px;
+        }
+        &__navigation-route {
+            float: right;
+            margin: 20px 10px;
+                    img {
+                        width: 12px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $color-terciario;
+                    }
+                    a:hover {
+                        border-bottom: 2px solid $color-terciario;
+                    }
+        }
+}
+.container-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+        &__type {
+            position: relative;
+            transition: all .4s ease-out;
+                img {
+                    display: block;
+                    width: 320px;
+                    height: 440px;
+                    object-fit: cover;
+                    filter: brightness(40%);
+                }
+                &--text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    text-align: center;
+                        h4 {
+                            margin-bottom: 15px;
+                            font-size: 30px;
+                            color: #fff;
+                            text-shadow: $sombra-baja-clara;
+                        }
+                        a {
+                            background: $color-terciario;
+                            margin-top: 20px;
+                            padding: 10px;
+                            color: #fff;
+                            border-radius: 4px;
+                            text-decoration: none;
+                        }
+                }               
+        }
+
+        &__type:hover {
+            transform: scale(1.01);
+        }
+}
+//main de todos los productos
+//! filters
+.container-options {
+    padding: 20px;
+        button {
+            padding: 10px;
+            border: 2px solid #0002;
+            margin: 0 10px;
+                img {
+                    width: 15px;
+                    margin-right: 3px;
+                }
+        }
+
+        select {
+            padding: 10px;
+            border: 2px solid #0002;
+            margin: 0 10px;
+            background: #e9e9e9;
+        }
+        &__navigation-route {
+            margin-top: 20px;
+                img {
+                    width: 12px;
+                }
+                a {
+                    text-decoration: none;
+                    color: $color-terciario;
+                }
+                a:hover {
+                    border-bottom: 2px solid $color-terciario;
+                }
+        }
+}
+//! indumentaria
+
+.container-shirts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+        &__item-shirt {
+            position: relative;
+            margin: 30px 20px;
+            transition: all .4s ease-out;
+                img {
+                    display: block;
+                    width: 250px;
+                    height: 400px;
+                    object-fit: cover;
+                    filter: brightness(40%);
+                    border-radius: 10px;
+                }
+                &--text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    text-align: center;
+                        h4 {
+                            margin-bottom: 15px;
+                            font-size: 30px;
+                            color: #fff;
+                            text-shadow: $sombra-baja-clara;
+                        }
+                        a {
+                            background: $color-terciario;
+                            margin-top: 20px;
+                            padding: 10px;
+                            color: #fff;
+                            border-radius: 4px;
+                            text-decoration: none;
+                        }
+                }               
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 30px 20px;
+            width: 250px;
+            height: 400px;
+            padding: 5px;
+            border: 2px solid $color-secundario;
+            border-radius: 10px;
+            box-shadow: $sombra-baja;
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin-bottom: 10px;
+                }
+
+                h3 {
+                    margin-bottom: 10px;
+                }
+                a {
+                    width: 150px;
+                    text-align: center;
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 5px;
+                    background: $color-terciario;
+                    border-radius: 5px;
+                    transition: all .3s ease;
+                }
+
+                a:hover {
+                    border: 2px solid #000;
+                    background: #fff;
+                    color: $color-terciario;
+                }
+        }
+}
+
 //footer 
 
 .container-footer {
@@ -253,7 +435,7 @@ header {
         &__politicy {
             margin: 10px;
                 li {
-                    display: inline-block;
+                    list-style: none;
                     float: right;
                     margin: 0 5px;
                     font-size: 15px;
