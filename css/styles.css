@@ -337,6 +337,167 @@ header .container-nav__menu a {
   color: #3333e3;
 }
 
+.container-title h1 {
+  display: inline-block;
+  font-size: 3.5em;
+  margin: 20px 30px;
+}
+.container-title h2 {
+  display: inline-block;
+  font-size: 3.5em;
+  margin: 20px 30px;
+}
+
+.container-text {
+  margin: 20px 30px;
+  width: 50vw;
+}
+.container-text ul {
+  margin: 10px 20px;
+}
+
+.container-background__1 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 400px;
+}
+.container-background__1 img {
+  float: right;
+  object-fit: cover;
+  width: 700px;
+  height: 400px;
+  margin-bottom: 25px;
+}
+
+.container-background__1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  right: 0;
+  position: absolute;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 45%, rgba(255, 255, 255, 0) 60%), linear-gradient(360deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0) 60%), linear-gradient(360deg, rgba(255, 255, 255, 0) 1%, rgb(255, 255, 255) 100%);
+}
+
+.container-background__2 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 400px;
+}
+.container-background__2 img {
+  float: right;
+  object-fit: cover;
+  width: 700px;
+  height: 400px;
+  margin-bottom: 25px;
+}
+
+.container-background__2::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  right: 0;
+  position: absolute;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 45%, rgba(255, 255, 255, 0) 60%), linear-gradient(360deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0) 60%), linear-gradient(360deg, rgba(255, 255, 255, 0) 1%, rgb(255, 255, 255) 100%);
+}
+
+.container-background__3 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 400px;
+}
+.container-background__3 img {
+  float: right;
+  object-fit: cover;
+  width: 700px;
+  height: 400px;
+  margin-bottom: 25px;
+}
+
+.container-background__3::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  right: 0;
+  position: absolute;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 45%, rgba(255, 255, 255, 0) 60%), linear-gradient(360deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0) 60%), linear-gradient(360deg, rgba(255, 255, 255, 0) 1%, rgb(255, 255, 255) 100%);
+}
+
+.title-contact h1 {
+  font-size: 3.5em;
+  margin-left: 20px;
+}
+.title-contact .separador {
+  width: 40vw;
+  margin-left: 15px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.4666666667);
+}
+
+.container-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container-form__formulario {
+  grid-column: 1/2;
+  padding: 20px;
+}
+.container-form__formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 40px;
+}
+.container-form__formulario form input {
+  outline: none;
+  border: 1px solid #000;
+  padding: 5px;
+  height: 30px;
+}
+.container-form__formulario form input:focus {
+  border-bottom: 2px solid #3333e3;
+}
+.container-form__formulario form textarea {
+  outline: none;
+  border: 1px solid #000;
+  padding: 5px;
+  resize: none;
+}
+.container-form__formulario form textarea:focus {
+  border-bottom: 2px solid #3333e3;
+}
+.container-form__formulario form button {
+  width: 70px;
+  height: 25px;
+  align-self: flex-end;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container-form__formulario form button:hover {
+  border: 1px solid #3333e3;
+  color: #3333e3;
+}
+.container-form__pagos {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.container-form__pagos--cards {
+  margin: 10px auto;
+}
+.container-form__pagos--cards img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border: 1px solid #3333e3;
+  border-radius: 3px;
+  margin: 0 3px;
+}
+
 .container-footer {
   width: 100%;
   height: 230px;

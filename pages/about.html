@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iron Threads - Accesorios</title>
-    <link rel="stylesheet" href="../../css/styles.css">
+    <title>Iron Threads - Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
@@ -22,71 +23,39 @@
                 <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
             <div class="container-nav__menu">
-                <li><a href="../../index.html">Inicio</a></li>
-                <li><a href="../products.html">Productos</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="products.html">Productos</a></li>
                 <li><a href="personalizados.html">Personalizados</a></li>
-                <li><a href="../about.html">Sobre Nosotros</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
             </div>
         </nav>
     </header>
 
     <main>
-       <div class="container-options">
-            <button type="button"><img src="https://icons.veryicon.com/png/o/miscellaneous/mall-icon-set/filter-44.png" alt="">Filtrar</button>
-            <select name="" id="">
-                <option value="" selected="true" disabled="disabled">Ordenar por</option>
-                <option value="">Precio ascendente</option>
-                <option value="">Precio descendente</option>
-                <option value="">Mas nuevo</option>
-                <option value="">Destacados</option>
-            </select>
-            <div class="container-options__navigation-route">
-                <a href="../products.html"><img src="https://cdn.icon-icons.com/icons2/510/PNG/512/arrow-left-c_icon-icons.com_50470.png" alt="">Volver</a>
+        <div class="title-contact" data-aos="fade-right" data-aos-duration="1500">
+            <h1>Contactanos!</h1>
+            <div class="separador"></div>
+        </div>
+        <div class="container-form">
+            <div class="container-form__formulario" data-aos="fade-right" data-aos-duration="1500">
+                <form action="">
+                    <input type="text" required placeholder="Escribe tu nombre" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300">
+                    <input type="email" required placeholder="Escribe tu correo electronico" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400">
+                    <input type="text" required placeholder="Escribe el asunto" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">
+                    <textarea name="" id="" cols="30" rows="10" required placeholder="Escribe el mensaje" data-aos="fade-down" data-aos-duration="1500"down data-aos-delay="600"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-       </div> 
-       <div class="container-shirts">
-        <div class="container-shirts__item-shirt">
-            <img src="https://cdn.shopify.com/s/files/1/0639/0709/products/MayhemNation_Hats_4.jpg?v=1650909768&width=900" alt="">
-            <div class="container-products__type--text">
-                <h4>Accesorios</h4>
+            <div class="container-form__pagos" data-aos="fade-down" data-aos-duration="1500"down data-aos-delay="600">
+                <h4>Medios de pago</h4>
+                <p>Aceptamos todas las tarjetas de crédito y débito a través de la plataforma de pago segura de Mercado Pago. Esto significa que puede realizar sus compras con cualquier tarjeta, ya sea Visa, Mastercard, American Express o cualquier otra, con total confianza. Además, también ofrecemos la opción de transferencia bancaria y pago en efectivo presencial para aquellos que prefieren realizar pagos directos. </p>
+                <div class="container-form__pagos--cards">
+                    <img src="../assets/img/bank-transfer.png" alt="">
+                    <img src="../assets/img/cash.svg" alt="">
+                    <img src="../assets/img/MercadoPago.svg" alt="">
+                </div>
             </div>
         </div>
-        <div class="container-shirts__item">
-            <img src="../../assets/img/Ejemplo.webp" alt="Remera">
-            <h3>MAYHEM ATHLETE</h3>
-            <a href="">Agregar al carrito</a>
-        </div>
-        <div class="container-shirts__item">
-            <img src="../../assets/img/Ejemplo.webp" alt="Remera">
-            <h3>MAYHEM ATHLETE</h3>
-            <a href="">Agregar al carrito</a>
-        </div>
-        <div class="container-shirts__item">
-            <img src="../../assets/img/Ejemplo.webp" alt="Remera">
-            <h3>MAYHEM ATHLETE</h3>
-            <a href="">Agregar al carrito</a>
-        </div>
-        <div class="container-shirts__item">
-            <img src="../../assets/img/Ejemplo.webp" alt="Remera">
-            <h3>MAYHEM ATHLETE</h3>
-            <a href="">Agregar al carrito</a>
-        </div>
-        <div class="container-shirts__item">
-            <img src="../../assets/img/Ejemplo.webp" alt="Remera">
-            <h3>MAYHEM ATHLETE</h3>
-            <a href="">Agregar al carrito</a>
-        </div>
-        <div class="container-shirts__item">
-            <img src="../../assets/img/Ejemplo.webp" alt="Remera">
-            <h3>MAYHEM ATHLETE</h3>
-            <a href="">Agregar al carrito</a>
-        </div>
-        <div class="container-shirts__item">
-            <img src="../../assets/img/Ejemplo.webp" alt="Remera">
-            <h3>MAYHEM ATHLETE</h3>
-            <a href="">Agregar al carrito</a>
-        </div>
-       </div>
     </main>
 
     <footer>
@@ -131,5 +100,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
