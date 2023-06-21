@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iron Threads - Otros articulos</title>
     <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
@@ -24,14 +25,14 @@
             <div class="container-nav__menu">
                 <li><a href="../../index.html">Inicio</a></li>
                 <li><a href="../products.html">Productos</a></li>
-                <li><a href="personalizados.html">Personalizados</a></li>
+                <li><a href="../personalizados.html">Personalizados</a></li>
                 <li><a href="../about.html">Sobre Nosotros</a></li>
             </div>
         </nav>
     </header>
 
     <main>
-       <div class="container-options">
+       <div class="container-options" data-aos="fade-right">
             <button type="button"><img src="https://icons.veryicon.com/png/o/miscellaneous/mall-icon-set/filter-44.png" alt="">Filtrar</button>
             <select name="" id="">
                 <option value="" selected="true" disabled="disabled">Ordenar por</option>
@@ -45,43 +46,43 @@
             </div>
        </div> 
        <div class="container-shirts">
-        <div class="container-shirts__item-shirt">
+        <div class="container-shirts__item-shirt" data-aos="flip-left" data-aos-duration="2000">
             <img src="../../assets/img/bottle.jpg" alt="">
-            <div class="container-products__type--text">
-                <h4>Otros</h4>
+            <div class="container-shirts__item-shirt--text">
+                <h1>Otros</h1>
             </div>
         </div>
-        <div class="container-shirts__item">
+        <div class="container-shirts__item" data-aos="flip-right" data-aos-duration="2000">
             <img src="../../assets/img/Ejemplo.webp" alt="Remera">
             <h3>MAYHEM ATHLETE</h3>
             <a href="">Agregar al carrito</a>
         </div>
-        <div class="container-shirts__item">
+        <div class="container-shirts__item" data-aos="flip-left" data-aos-duration="2000">
             <img src="../../assets/img/Ejemplo.webp" alt="Remera">
             <h3>MAYHEM ATHLETE</h3>
             <a href="">Agregar al carrito</a>
         </div>
-        <div class="container-shirts__item">
+        <div class="container-shirts__item" data-aos="flip-right" data-aos-duration="2000">
             <img src="../../assets/img/Ejemplo.webp" alt="Remera">
             <h3>MAYHEM ATHLETE</h3>
             <a href="">Agregar al carrito</a>
         </div>
-        <div class="container-shirts__item">
+        <div class="container-shirts__item" data-aos="flip-left" data-aos-duration="2000">
             <img src="../../assets/img/Ejemplo.webp" alt="Remera">
             <h3>MAYHEM ATHLETE</h3>
             <a href="">Agregar al carrito</a>
         </div>
-        <div class="container-shirts__item">
+        <div class="container-shirts__item" data-aos="flip-right" data-aos-duration="2000">
             <img src="../../assets/img/Ejemplo.webp" alt="Remera">
             <h3>MAYHEM ATHLETE</h3>
             <a href="">Agregar al carrito</a>
         </div>
-        <div class="container-shirts__item">
+        <div class="container-shirts__item" data-aos="flip-left" data-aos-duration="2000">
             <img src="../../assets/img/Ejemplo.webp" alt="Remera">
             <h3>MAYHEM ATHLETE</h3>
             <a href="">Agregar al carrito</a>
         </div>
-        <div class="container-shirts__item">
+        <div class="container-shirts__item" data-aos="flip-right" data-aos-duration="2000">
             <img src="../../assets/img/Ejemplo.webp" alt="Remera">
             <h3>MAYHEM ATHLETE</h3>
             <a href="">Agregar al carrito</a>
@@ -131,5 +132,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

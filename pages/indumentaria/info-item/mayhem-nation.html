@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iron Threads - Nuestros productos</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Iron Threads - Buzo Mayhem Nation</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,65 +22,48 @@
                 <a href=""><i class="fa-brands fa-searchengin"></i></a>
                 <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
-            <div class="icon-menu-hidden">
-                <a href=""><i class="fa-solid fa-bars"></i></a>
-            </div>
             <div class="container-nav__menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="products.html">Productos</a></li>
-                <li><a href="personalizados.html">Personalizados</a></li>
-                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="../../../index.html">Inicio</a></li>
+                <li><a href="../../products.html">Productos</a></li>
+                <li><a href="../../personalizados.html">Personalizados</a></li>
+                <li><a href="../../about.html">Sobre Nosotros</a></li>
             </div>
-            
         </nav>
     </header>
 
     <main>
-        <div class="title-products" data-aos="fade-right" data-aos-duration="1500">
-            <h1>Productos</h1>
-            <div class="title-products__navigation-route">
-                <a href="../index.html"><img src="https://cdn.icon-icons.com/icons2/510/PNG/512/arrow-left-c_icon-icons.com_50470.png" alt="">Volver</a>
-            </div> 
+        <div class="container-info-item">
+            <div class="container-info-item__btn-back">
+                <a href="../buzos.html"><img src="https://cdn.icon-icons.com/icons2/510/PNG/512/arrow-left-c_icon-icons.com_50470.png" alt="">
+                Volver</a>
+            </div>
+            <div class="container-info-item__box">
+                <div class="container-info-item__box-img">
+                    <img src="../../../assets/img/Ejemplo.webp" id="imageBox" alt="">
+                </div>
+                <div class="container-info-item__box-text">
+                    <h2>Buzo Mayhem Nation</h2>
+                    <h3>$11.500</h2>
+                    <label for="">Elegi el talle</label>
+                    <select name="" id="">
+                        <option value="">S</option>
+                        <option value="">M</option>
+                        <option value="">L</option>
+                        <option value="">XL</option>
+                        <option value="">XXL</option>
+                    </select>
+                    <button type="submit">Agregar al carrito</button>
+                    <div class="container-info-item__box-img-2">
+                        <h3>Mas imagenes</h3>
+                        <div class="separador"></div>
+                        <img src="../../../assets/img/Ejemplo.webp" onclick="myFunction(this)" alt="">
+                        <img src="../../../assets/img/Ejemplo2.webp" onclick="myFunction(this)" alt="">
+                        <img src="../../../assets/img/Ejemplo3.webp" onclick="myFunction(this)" alt="">
+                        <img src="../../../assets/img/Ejemplo4.webp" onclick="myFunction(this)" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-               
-       <div class="container-products">
-            <div class="container-products__type" data-aos="flip-left" data-aos-duration="1500">
-                <img src="https://businessguideafrica.com/wp-content/uploads/2021/08/fe326d3b2753c7260a467f99c4b17f.jpg" alt="">
-                <div class="container-products__type--text">
-                    <h4>Remeras y musculosas</h4>
-                    <a href="indumentaria/remeras.html">VER</a>
-                </div>
-            </div>
-            <div class="container-products__type" data-aos="flip-right" data-aos-duration="1500">
-                <img src="https://cdn.shopify.com/s/files/1/0639/0709/products/42222_1-191.jpg?v=1650900673" alt="">
-                <div class="container-products__type--text">
-                    <h4>Buzos y camperas</h4>
-                    <a href="indumentaria/buzos.html">VER</a>
-                </div>
-                
-            </div>
-            <div class="container-products__type" data-aos="flip-left" data-aos-duration="1500">
-                <img src="https://cdn.shopify.com/s/files/1/0639/0709/products/42222_1-134.jpg?v=1652103735&width=360" alt="">
-                <div class="container-products__type--text">
-                    <h4>Shorts y joggins</h4>
-                    <a href="indumentaria/pantalones.html">VER</a>
-                </div>
-            </div>
-            <div class="container-products__type" data-aos="flip-right" data-aos-duration="1500">
-                <img src="https://cdn.shopify.com/s/files/1/0639/0709/products/MayhemNation_Hats_4.jpg?v=1650909768&width=900" alt="">
-                <div class="container-products__type--text">
-                    <h4>Accesorios</h4>
-                    <a href="indumentaria/accesorios.html">VER</a>
-                </div>
-            </div>
-            <div class="container-products__type" data-aos="flip-left" data-aos-duration="1500">
-                <img src="../assets/img/bottle.jpg" alt="">
-                <div class="container-products__type--text">
-                    <h4>Otros</h4>
-                    <a href="indumentaria/otros.html">VER</a>
-                </div>
-            </div>
-       </div>
     </main>
 
     <footer>
@@ -125,6 +108,12 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        function myFunction (smallImg) {
+            var fullImg=document.getElementById("imageBox");
+            fullImg.src=smallImg.src;
+        }
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
