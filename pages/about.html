@@ -13,25 +13,24 @@
 </head>
 <body>
     <header>
-        <nav class="container-nav">
-            <div class="container-nav__logo">
-                <img src="" alt="" class="logo-img">
-            </div>
-            <div class="icon-cart">
-                <a href=""><i class="fa-solid fa-user"></i></a>
-                <a href=""><i class="fa-brands fa-searchengin"></i></a>
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-            <div class="icon-menu-hidden">
-                <a href=""><i class="fa-solid fa-bars"></i></a>
-            </div>
-            <div class="container-nav__menu">
+        <img src="../assets/img/logo/Logonav.png" alt="" class="logo-img">
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="fa-solid fa-rectangle-xmark"></i></button>
+            <ul class="nav-list">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="products.html">Productos</a></li>
                 <li><a href="personalizados.html">Personalizados</a></li>
                 <li><a href="about.html">Sobre Nosotros</a></li>
-            </div>
+            </ul>
         </nav>
+        <div class="icon-list">
+            <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+            <div>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-brands fa-searchengin"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -107,5 +106,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

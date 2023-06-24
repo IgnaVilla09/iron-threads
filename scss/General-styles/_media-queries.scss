@@ -56,23 +56,62 @@
 }
 //Media queries - Responsive desing - Orientacion vertical
 @media (max-width: 950px) {
-    header {
-        .container-nav {
-            .icon-cart {
-                display: none;
-            }
-            .icon-menu-hidden {
-                display: inline;
-                float: right;
-                    i {
-                        font-size: 30px;
-                    }
-            }
-            &__menu {
-                display: none;
-            }
-        }
+    
+    .abrir-menu {
+        display: block;
+        background: transparent;
+        font-size: 1.5em;
+        color: #1c1c1c;
+        border: 0;
     }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 20px;
+        z-index: 100;
+        border-radius: 0px 0px 0px 10px;
+        box-shadow: 0 0 0 100vmax rgb(0,0,0,.5);
+            .cerrar-menu {
+                display: block;
+                background: transparent;
+                font-size: 1.3em;
+                color: #f00;
+                border: 0;
+                margin-bottom: 5px;
+            }
+            &-list {
+                flex-direction: column;
+                align-items: end;
+                    a {
+                        color: #ececec;
+                    }
+                    
+            }
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+
+
+
+
+
+
+
     .container-featured-content {
         &__new-releases {
             h1 {
