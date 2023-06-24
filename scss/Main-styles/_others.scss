@@ -1,0 +1,17 @@
+.container-others {
+        h1 {
+            font-size: $tamanio-titulos;
+            text-align: center;
+            margin: 20px 0;
+        }
+        &__galery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+                img {
+                    width: 450px;
+                    object-fit: cover;
+                }
+        }
+}
